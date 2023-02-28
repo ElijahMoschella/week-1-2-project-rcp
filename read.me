@@ -1,0 +1,45 @@
+    Figure A= originalk html document
+    Figure B= Edited html Document 
+  ---------------------------------------------
+     Changes Made to the HTML Document
+    The following is a list of changes made to the original HTML document (Figure A) used to produce the new HTML document (Figure B).
+-------------------------------------------------
+TITLE
+Figure A: <title>website</title>
+Figure B: <title>horisen</title>
+HEADER
+Figure A: <div class="header">
+Figure B: <header class="header4">
+The div element in Figure A was changed to a header element in Figure B.
+NAV
+Figure A: <div><ul>...</ul></div>
+Figure B: <nav><ul>...</ul></nav>
+The div element containing the navigation menu in Figure A was changed to a nav element in Figure B.
+SECTIONS
+Figure A: <div class="hero"></div><div class="content">...</div><div class="benefits">...</div>
+Figure B: <section class="hero"></section><section class="content">...</section>
+The div elements in Figure A were changed to section elements in Figure B.
+The benefits div element was removed from Figure B.
+ARTICALS
+Figure A: <div class="search-engine-optimization">...</div><div id="online-reputation-management" class="online-reputation-management">...</div><div id="social-media-marketing" class="social-media-marketing">...</div>
+Figure B: <article class="search-engine-optimization">...</article><article class="online-reputation-management" id="online-reputation-management">...</article><article class="social-media-marketing">...</article>
+The div elements in Figure A were changed to article elements in Figure B.
+The social-media-marketing article element in Figure B does not have an id attribute.
+IMAGES
+Figure A: <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+Figure B: <img src="./assets/images/search-engine-optimization.jpg" alt="Graphic with Coming Soon text" class="float-left" />
+The alt attribute was added to the img element in Figure B.
+FOOTER
+Figure A: <div class="footer">...</div>
+Figure B: The div element was not changed in Figure B.
+MAIN
+Figure B: <main>...</main>
+The main element was added to Figure B.
+--------------------------------------------------------------
+    This is the main list of html changes that had to be made to corectly replace the div semantic tags.
+     -inside the css document only the classes were updated and a single line of code was added : 
+     .header4 {
+    width: 100%;
+    display: block;
+  }
+    The line of code above fixes the header not reaching along the entire top of the page, width: block both fixed its inability to cross the page.
